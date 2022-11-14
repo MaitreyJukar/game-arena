@@ -1,10 +1,10 @@
 
 <script setup>
-import BlockMover from "../components/BlockMover.vue";
+import TableHockey from "../components/TableHockey.vue";
 </script>
 
 <template>
-    <BlockMover />
+    <TableHockey />
 </template>
 
 <style scoped>

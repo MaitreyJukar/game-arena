@@ -73,7 +73,7 @@ const PADEL_WIDTH = 20;
 const BALL_SIZE = 20;
 
 export default {
-  name: "BlockMover",
+  name: "TableHockey",
   components: {
     ConfettiExplosion,
     CaretUpOutlined,
