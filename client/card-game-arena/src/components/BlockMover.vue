@@ -109,7 +109,7 @@ export default {
     }
   },
   created() {
-    this.socket = io("http://192.168.0.117:3000", {
+    this.socket = io("http://localhost:3000", {
       transports: ["websocket"],
     });
     const $self = this;

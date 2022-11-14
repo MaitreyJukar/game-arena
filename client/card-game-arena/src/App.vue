@@ -1,12 +1,11 @@
 
 <script setup>
-import BlockMover from "./components/BlockMover.vue";
 </script>
 
 <template>
   <div>
     <div class="app-wrapper">
-      <BlockMover />
+      <router-view></router-view>
     </div>
   </div>
 </template>
