@@ -1,7 +1,5 @@
 client/node_modules/*
 server/node_modules/*
-client/.vscode/*
-client/card-game-arena/.vscode/extensions.json
 client/.DS_Store
 .DS_Store
 client/card-game-arena/package-lock.json
