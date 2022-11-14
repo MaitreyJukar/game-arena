@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    background: #7B7B7C;
+}
+
+@font-face {
+    font-family: PressStart2P;
+    src: url(./fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}

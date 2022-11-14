@@ -1,0 +1,24 @@
+{
+  "name": "card-game-arena",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite build && serve dist/ -p 8001"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "ant-design-vue": "^3.2.14",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3",
+    "vue": "^3.2.41",
+    "vue-confetti-explosion": "^1.0.1",
+    "vue-router": "^4.1.5",
+    "vue3-touch-events": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "vite": "^3.1.8"
+  }
+}
