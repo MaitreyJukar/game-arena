@@ -40,32 +40,6 @@ function TableHockey(Socketio) {
         x: GAME_WIDTH - 5 - PADEL_WIDTH,
         y: GAME_HEIGHT / 2 - PADEL_HEIGHT / 2
     }
-    console.log("TRY CONNECTING...")
-    Socketio.on("connection", socket => {
-        console.log("CONNECTION ESTABLISHED")
-        sendCurrentState();
-        socket.on("move", data => {
-            moveBall(data);
-        });
-        socket.on("start", () => {
-            startGame();
-        })
-        socket.on("pause", () => {
-            pauseGame();
-        })
-        socket.on("move-padel", data => {
-            movePadel(data)
-        })
-        socket.on("join", data => {
-            addPlayer(data)
-        })
-        socket.on("reset", () => {
-            resetGame()
-        })
-        socket.on("get-game-data", () => {
-            sendCurrentState()
-        })
-    });
 
     var moveBall = function (direction) {
         switch (direction) {
@@ -240,6 +214,31 @@ function TableHockey(Socketio) {
             gameState
         })
     }
+    
+    Socketio.on("connection", socket => {
+        sendCurrentState();
+        socket.on("move", data => {
+            moveBall(data);
+        });
+        socket.on("start", () => {
+            startGame();
+        })
+        socket.on("pause", () => {
+            pauseGame();
+        })
+        socket.on("move-padel", data => {
+            movePadel(data)
+        })
+        socket.on("join", data => {
+            addPlayer(data)
+        })
+        socket.on("reset", () => {
+            resetGame()
+        })
+        socket.on("get-game-data", () => {
+            sendCurrentState()
+        })
+    });
 
 };
 
