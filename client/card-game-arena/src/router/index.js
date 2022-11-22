@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/table-hockey',
       name: 'table-hockey',
       component: () => import('../views/TableHockey.vue')
+    },
+    {
+      path: '/card-picker',
+      name: 'card-picker',
+      component: () => import('../views/CardPicker.vue')
     }
   ]
 })

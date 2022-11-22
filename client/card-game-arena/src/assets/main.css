@@ -7,3 +7,20 @@ body {
     font-family: PressStart2P;
     src: url(./fonts/Press_Start_2P/PressStart2P-Regular.ttf);
 }
+
+@font-face {
+    font-family: Lato;
+    src: url(./fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 700;
+    src: url(./fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 100;
+    src: url(./fonts/Lato/Lato-Thin.ttf);
+}
